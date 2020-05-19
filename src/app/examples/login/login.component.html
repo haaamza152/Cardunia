@@ -1,0 +1,99 @@
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="page-header" filter-color="orange">
+    <div class="page-header-image" style="background-image:url(assets/img/login.jpg)"></div>
+    <div class="container">
+        <div class="col-lg-12 content-center">
+            <div class="col-md-6 card card-login card-plain">
+                <form  (ngSubmit)="signin(f)" #f="ngForm" class="form-control" method="" action="">
+                    <div class="header header-primary text-center">
+                        <div class="container">
+                            <h3 class="title">Login</h3>
+                        </div>
+                    </div>
+                    <div *ngIf="error$ | async as error" class="alert alert-danger" role="alert">
+                        {{ "hamza" }}
+                      </div>
+                    <div class="content" >
+                      <div class="input-group form-group-no-border input-lg" [ngClass]="{'input-group-focus':focus===true}">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">  <i class="now-ui-icons ui-1_email-85"></i></span>
+                        </div>
+                        
+                          <input type="email" class="form-control" id="email" ngModel name="email"   placeholder="Username" (focus)="focus=true" (blur)="focus=false" >
+                      </div>
+                      <div class="input-group form-group-no-border input-lg" [ngClass]="{'input-group-focus':focus1===true}">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="now-ui-icons objects_key-25"></i></span>
+                        </div>
+                          <input type="password" placeholder="Password" id="password" ngModel name="password" class="form-control" (focus)="focus1=true" (blur)="focus1=false"/>
+                      </div>
+                    </div>
+                    <div class="footer text-center">
+                        <button 
+                         class="btn btn-primary btn-round btn-lg btn-block" type="Submit" [disabled]="!f.valid" >Login</button>
+                    </div>
+                    <div class="pull-left">
+                        <h6>
+                            <a href="signup" class="link">Create Account</a>
+                        </h6>
+                    </div>
+                    <div class="pull-right">
+                        <h6>
+                            <a href="#pablo" class="link">Need Help?</a>
+                        </h6>
+                    </div>
+                </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <footer class="footer">
+        
+
+        
+                
+  
+            
+            
+
+            
+            <div class="copyright">
+                &copy;
+              {{data | date: 'yyyy'}}, Designed by
+                <a href="examples/landing" target="_blank">Cardunia.co</a>. Coded by
+                <a href="examples/landing" target="_blank">Hamza Pervaiz</a>.
+            </div>
+      
+    </footer>
+</div>
+

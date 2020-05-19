@@ -1,0 +1,107 @@
+<mat-toolbar id="mainToolbar" color="primary">
+  <mat-icon id="toolbarMenu">arrow_back</mat-icon>
+
+  <span class="toolbar-spacer"></span>
+</mat-toolbar>
+
+<mat-sidenav-container id="sidenavContainer" fullscreen>
+  <mat-sidenav mode="side" #sidenav id="sidenav" [style]="" opened>
+
+    <mat-accordion>
+
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <mat-icon>library_books</mat-icon>
+            Templates
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+      </mat-expansion-panel>
+
+        <mat-expansion-panel >
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                  <mat-icon>collections</mat-icon>
+                  Images
+                </mat-panel-title>
+            </mat-expansion-panel-header>
+
+            <mat-grid-list [cols]="2" gutterSize="3px" rowHeight="100px">
+                  <mat-grid-tile class="sideNavElement"
+                                 [colspan]="1"
+                                 [rowspan]="1"
+                                 *ngFor="let imagePath of imagePaths">
+
+                      <img class="img" [src]="imagePath" alt="extra" (click)="appear(imagePath)">
+
+                  </mat-grid-tile>
+            </mat-grid-list>
+
+        </mat-expansion-panel>
+
+      <mat-expansion-panel >
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <mat-icon>brush</mat-icon>
+            Shapes
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <mat-grid-list [cols]="2" gutterSize="3px" rowHeight="100px">
+          <mat-grid-tile class="sideNavElement"
+                         [colspan]="1"
+                         [rowspan]="1"
+                         *ngFor="let imagePath of imagePaths">
+
+            <img class="img" [src]="imagePath" alt="extra" (click)="appear(imagePath)">
+
+          </mat-grid-tile>
+        </mat-grid-list>
+
+      </mat-expansion-panel>
+
+      <mat-expansion-panel >
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <mat-icon>texture</mat-icon>
+            BackGround
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <mat-grid-list [cols]="2" gutterSize="3px" rowHeight="100px">
+          <mat-grid-tile class = "sideNavElement">
+            <img [src] = "noBackGround" alt="" (click)="removeBack()">
+          </mat-grid-tile>
+
+          <mat-grid-tile class="sideNavElement"
+                         [colspan]="1"
+                         [rowspan]="1"
+                         *ngFor="let background of backgrounds">
+
+            <img class="img" [src]="background" alt="extra" (click)="selectBackground(background)">
+
+          </mat-grid-tile>
+        </mat-grid-list>
+
+      </mat-expansion-panel>
+
+    </mat-accordion>
+
+    <mat-list>
+      <mat-list-item>
+          <button class = "menu-item" mat-flat-button (click)="createText()">
+            <mat-icon>format_color_text</mat-icon>
+            Text
+          </button>
+
+      </mat-list-item>
+    </mat-list>
+
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <app-canvas   
+     [background]="canvasBackground" 
+     ></app-canvas>
+  </mat-sidenav-content>
+</mat-sidenav-container>

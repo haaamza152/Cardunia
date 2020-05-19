@@ -1,0 +1,189 @@
+<div class="wrapper">
+    <div class="page-header page-header-small">
+   
+        <div class="page-header-image rellax-header" data-rellax-speed="-8"  style="background-image: url('assets/img/designs.jpg');">
+        </div>
+        <div class="container">
+            <div class="content-center">
+                <h1 class="title">Your Designs</h1>
+               
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="container-fluid">
+            <h3 class="title">All Your Designs
+            </h3>
+            <div id="typography">
+                <div class="row">
+                    <div class="col-sm-12">
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="space-50"></div>
+            <div id="images">
+            
+                <div class="row">
+                    <div class="col-md-4" *ngFor="let image of images">
+                     <a  routerLink="/canvas" routerLinkActive  >
+                        
+                                <img   [src]="image.img" alt="Rounded Image" class="rounded"   (click)="onclick(image.img)">
+
+                                
+                                <p class="category"></p>
+                            </a>
+                          
+                        </div>
+
+
+
+
+                        <div class="col-md-4">
+                      
+                            <img src='assets/img/bg6.jpg' alt="Rounded Image" class="rounded">
+                            <p class="category"></p>
+                        
+                
+                      
+                    </div>
+                    <div class="col-md-4">
+                      
+                        <img src='assets/img/bg3.jpg' alt="Rounded Image" class="rounded">
+                        <p class="category"></p>
+
+
+                    
+            
+                  
+                </div>
+
+                <div class="col-md-4">
+                      
+                    <img src='assets/img/bg4.jpg' alt="Rounded Image" class="rounded">
+                    <p class="category"></p>
+                
+        
+              
+            </div>
+            <div class="col-md-4">
+              
+                <img src='assets/img/bg5.jpg' alt="Rounded Image" class="rounded">
+                <p class="category"></p>
+
+                
+            
+    
+          
+        </div>
+
+       
+            <div class="col-md-4">
+              
+                        <img src='assets/img/bg7.jpg' alt="Rounded Image" class="rounded">
+                        <p class="category"></p>
+                    
+            
+                  
+                </div>
+
+
+                      
+                   
+            
+
+
+
+            <div class="row">
+                   
+                <div class="col-md-4">
+              
+                    <img src='assets/img/bg8.jpg' alt="Rounded Image" class="rounded">
+                    <p class="category"></p>
+              
+            </div>
+
+            <div class="col-md-4">
+                          
+                <img src='assets/img/login.jpg' alt="Rounded Image" class="rounded">
+                <p class="category"></p>
+            
+    
+          
+        </div>
+
+       
+            <div class="col-md-4">
+              
+                        <img src='assets/img/header.jpg' alt="Rounded Image" class="rounded">
+                        <p class="category"></p>
+                    
+            
+                  
+                </div>
+                <div class="col-md-4">
+                              
+                    <img src='assets/img/bg1.jpg' alt="Rounded Image" class="rounded">
+                    <p class="category"></p>
+                
+        
+              
+            </div>
+
+
+            <div class="col-md-4">
+                              
+                <img src='assets/img/bg11.jpg' alt="Rounded Image" class="rounded">
+                <p class="category"></p>
+            
+    
+          
+        </div>
+
+
+          </div>
+        </div>
+
+
+       
+        
+
+            
+
+    <footer class="footer footer-default">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="https://www.creative-tim.com">
+                            Creative Tim
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.creative-tim.com/about-us">
+                            About Us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://blog.creative-tim.com">
+                            Blog
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/creativetimofficial/now-ui-kit/blob/master/LICENSE.md">
+                            MIT License
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="copyright">
+                &copy;
+                {{data | date: 'yyyy'}}, Designed by
+                <a href="examples/landing" target="_blank">Cardunia.co</a>. Coded by
+                <a href="examples/landing" target="_blank">Hamza Pervaiz</a>.
+            </div>
+        </div>
+    </footer>
+</div>
+

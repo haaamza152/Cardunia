@@ -1,0 +1,93 @@
+.carousel-item {
+    &.active, &.carousel-item-right, &.carousel-item-next {
+      display: flex !important;
+      flex-wrap: wrap
+    }
+  }
+
+  .example-form {
+    min-width: 190px;
+    max-width: 500px;
+    width: 100%;
+   
+    border-radius: round($number: 0);
+  }
+  
+  .example-full-width {
+    width: 100%;
+    color: black;
+    border: round($number: 80);
+    border-top-color: white;
+  }
+ 
+
+  .example-container {
+    position: absolute;
+    top: 60px;
+    bottom: 60px;
+    left: 0;
+    right: 0;
+  }
+  
+  .example-sidenav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    position: absolute;
+background-color:transparent;
+   
+  }
+  
+  .example-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .social {
+   // position: fixed;
+    bottom: 0;
+    left: 10;
+    right: 0;
+  }
+  
+  .example-footer {
+    position: fixed;
+    bottom: 0;
+    left:  0;
+    right: 0;
+  }
+  section {
+    display: table;
+    margin: 8px;
+  }
+  
+  .example-label {
+    display: table-cell;
+    font-size: 14px;
+    margin-left: 8px;
+    width: 120px;
+  }
+  
+  .example-button-row {
+    display: table-cell;
+  }
+  
+  .example-button-row button {
+    display: table-cell;
+    margin-right: 8px;
+  }
+  
+  .example-flex-container {
+    display: flex;
+    justify-content: space-between;
+    width: 480px;
+  }
+  
+  .example-button-container {
+    display: flex;
+    justify-content: center;
+    width: 120px;
+  }

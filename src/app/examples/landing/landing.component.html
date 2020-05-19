@@ -1,0 +1,337 @@
+
+
+
+
+
+
+
+
+   
+ 
+    <div class="wrapper">
+   
+        <div class="page-header page-header-small">
+           
+            <div class="page-header-image rellax-header" data-rellax-speed="-8" style="background-image: url('assets/img/a.jpg');">
+            </div>
+        
+            <div class="container">
+
+
+
+
+
+                <div class="content-center">
+
+                  <h1 class="title">Design Anything</h1>
+
+             
+
+
+
+                    
+                   
+                </div>
+            </div>
+        
+    </div>
+    
+        <div class="section">
+            <div class="container-fluid">
+                <h3 class="title">Create a Design</h3>
+                
+              
+                <div id="images">
+    
+                    
+               
+                    <div class="row">
+                        
+                        <div class="col-sm-2">
+                         <a [routerLink]="['/flyer']">
+                                    <img src='assets/img/flyer.jpg' alt="Rounded Image" class="rounded" >
+                                    <p class="category"  >Flyer</p>
+                                
+                                </a>
+                              
+                            </div>
+                            <div class="col-sm-2">
+                                <a [routerLink]="['/poster']">
+                                <img src='assets/img/poster.jpg' alt="Rounded Image" class="rounded">
+                                <p class="category">Poster</p>
+                            
+                                </a>
+                          
+                        </div>
+                        <div class="col-sm-2">
+                            <a [routerLink]="['/logos']">
+                            <img src='assets/img/icon.jpg' alt="Rounded Image" class="rounded">
+                            <p class="category">Logo</p>
+                            </a>
+    
+                        </div>
+                
+                        <div class="col-sm-2">
+                            <a [routerLink]="['/logos']">
+                            <img src='assets/img/templates.jpg' alt="Rounded Image" class="rounded">
+                            <p class="category">Templates</p>
+    </a>
+    
+                        </div>
+
+                    
+    
+               
+    
+                    <div class="col-sm-2">
+                          
+                        <img src='assets/img/bg4.jpg' alt="Rounded Image" class="rounded">
+                        <p class="category">business</p>
+                    
+            
+                  
+                </div>
+           
+                <div class="col-sm-2">
+                  
+                    <img src='assets/img/bg5.jpg' alt="Rounded Image" class="rounded">
+                    <p class="category">Wedding card</p>
+    
+                    
+                
+        
+              
+     </div>
+    
+                    </div>
+                    </div>
+    
+    
+    
+                          
+                       
+    </div>
+      
+            
+            
+    
+    
+            
+                <ng-template  [ngIf] ="authService.isAuthenticated()">
+                <div class="container-fluid" >
+                    <h3 class="title">Yours Designs</h3>
+                    <div id="typography">
+                        <div class="row">
+                            <div class="col-md-12">
+                               
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="images">
+                    
+                        <div class="row">
+                            <div class="col-sm-2" *ngFor="let img of images">
+                              
+                                        <img [src]="img.img" alt="Rounded Image" class="rounded">
+                                        <p class="category"></p>
+                                    
+                            
+                                  
+                                </div>
+                                <div class="col-sm-2">
+                              
+                                 
+                                
+                            
+                    
+                          
+                        </div>
+        
+        
+                              
+                           
+                    </div>
+                  </div>
+                </div>
+                </ng-template>
+    
+             
+                    <div class="container-fluid">
+                        <h3 class="title">Flyers</h3>
+                        <div id="typography">
+                            <div class="row">
+                                <div class="col-md-12">
+                                   
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div id="images">
+                        
+                            <div class="row">
+                                <div class="col-sm-2">
+                                  
+                                            <img src='assets/img/header.jpg' alt="Rounded Image" class="rounded">
+                                            <p class="category"></p>
+                                        
+                                
+                                      
+                                    </div>
+                                    <div class="col-sm-2">
+                                  
+                                        <img src='assets/img/bg1.jpg' alt="Rounded Image" class="rounded">
+                                        <p class="category"></p>
+                                    
+                            
+                                  
+                                </div>
+                                <div class="col-sm-2">
+                                  
+                                    <img src='assets/img/bg11.jpg' alt="Rounded Image" class="rounded">
+                                    <p class="category"></p>
+                                
+                        
+                              
+                            </div>
+            
+            
+                                  
+                               
+                        </div>
+                      </div>
+                      </div>
+    
+                      <div class="container-fluid" >
+                        <h3 class="title">Posters</h3>
+                        <div id="typography">
+                            <div class="row">
+                                <div class="col-md-12">
+                                   
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div id="images">
+                        
+                            <div class="row">
+                                <div class="col-sm-2" *ngFor="let img of images">
+                                  
+                                            <img [src]="img.img" alt="Rounded Image" class="rounded">
+                                            <p class="category"></p>
+                                        
+                                
+                                      
+                                    </div>
+                                    <div class="col-sm-2">
+                                  
+                                      
+                                    
+                                
+                        
+                              
+                            </div>
+            
+            
+                                  
+                               
+                        </div>
+                      </div>
+                    </div>
+
+                </div>
+                    
+                    <div class="container-fluid">
+
+                      
+                      
+        <footer class="footer footer-default">
+            
+               
+         
+          <div class="container-fluid">
+
+           
+            <nav>
+             
+                
+
+              
+                <ul>
+
+
+
+                  
+                    <li>
+                        <a href="">
+                            Cardunia
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            About Us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Contact us
+                        </a>
+                    </li>
+
+
+
+                    <li>
+                      <a target="_blank" href="https://www.twitter.com/" class="btn btn-neutral btn-icon btn-twitter btn-round btn-lg" rel="tooltip" title="Follow us">
+                        <i class="fab fa-twitter"></i>
+                      </a>
+                    </li>
+  
+  
+                    <li>
+                      <a target="_blank" href="https://www.facebook.com/" class="btn btn-neutral btn-icon btn-facebook btn-round btn-lg" rel="tooltip" title="Like us">
+                        <i class="fab fa-facebook-square"></i>
+                      </a>
+  
+                    </li>
+                    
+                </ul>
+            </nav>
+
+          </div>
+            
+              
+         
+    
+      
+                <div class="copyright">
+                    &copy;
+                    {{data | date: 'yyyy'}}, Designed by
+                    <a href="examples/landing" target="_blank">Cardunia.co</a>. Coded by
+                    <a href="examples/landing" target="_blank">Hamza Pervaiz</a>.
+                </div>
+          
+       
+        </footer>
+    </div>
+    </div>
+   
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+

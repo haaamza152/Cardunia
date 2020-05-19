@@ -1,0 +1,11 @@
+
+
+<app-sidenav  *ngIf ="authService.isAuthenticated() && !this.iscanvas" >
+
+</app-sidenav>
+
+<app-navbar *ngIf ="!authService.isAuthenticated() && !iscanvas" ></app-navbar>
+
+<router-outlet *ngIf ='!authService.isAuthenticated()'></router-outlet>
+
+<router-outlet *ngIf ='authService.isAuthenticated() && this.iscanvas'></router-outlet>

@@ -1,0 +1,19 @@
+.medium-btn {
+    width: 200px;
+    height: 40px;
+    background-color: white;
+    color: black;
+    border: 2px solid lightslategray;
+    
+}
+.medium-btn1 {
+width: 200px;
+    height: 40px;
+    background-color: #00CED1;}
+
+.nav-footer{
+    position: absolute;
+    
+    bottom: 60px;
+    left: 20px;
+}
